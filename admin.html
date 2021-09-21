@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Administrador Codekraft</title>
+	<link rel="stylesheet" type="text/css" href="styleTemp.css">
+</head>
+<body>
+	<header>
+		<div id="logo" style="width: 30%;">Logo</div>
+		<nav>
+			<a href="index.html">Inicio</a>
+			<a href="">Cursos</a>
+			<a href="login.html">Login</a>
+		</nav>
+	</header>
+
+	<main class="admin">
+		<section style="width:50%; margin-bottom: 10px;">
+			<form id="fcurso">
+				<button id="cbutton" type="submit" style="width:10%">Crear curso</button><br>
+				<div style="width: 85%"></div>
+				<input style="width: 100%;" type="text" name="nombre" placeholder="Nombre" required>
+				<input style="width: 100%; height: 150px;" type="text" name="desc" placeholder="Descripción" required>
+			</form>
+		</section>
+
+		<picture class="apic">img_Upload</picture>
+		<picture class="apic">img_Upload</picture>
+
+		<section style="width:100%; color: white; height: 200px;">
+			<h2 style="width:100%">Lista de cursos</h2><br>
+			<ul id="lcursos">
+				<li>Curso 1</li>
+				<li>Curso 2</li>
+				<li>Curso N</li>
+			</ul>
+		</section>
+	</main>
+
+	<footer><p>&copy; Codekraft</p></footer>
+</body>
+</html>
