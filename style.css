@@ -15,21 +15,21 @@ header {
   color: white;
   width: 100%;
   height: 100px;
-  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  padding-bottom: 0;
 }
 
-#logo{
-  padding: 15px 20px;
+#logo {
   font-size: 25px;
 }
 
-nav{
-  margin-right: 40px;
-  float: right;
-  
+nav {
+  font-size: 25px;
 }
 
-nav a{
+nav a {
   color: white;
   padding: 5px;
   margin-left: 5px;
@@ -37,7 +37,7 @@ nav a{
   text-decoration: none;
 }
 
-nav a:hover{
+nav a:hover {
   color: #2f38c5;
   background-color: white;
 }
@@ -48,32 +48,39 @@ main.index {
   flex-wrap: wrap;
 }
 
-.card{
+.card {
   color: white;
-  border-radius: 4px;
+
   width: 50%;
+  /* margin-right: 10px; */
+  /* margin-left: 10px; */
   height: 250px;
-  margin-bottom: 20px;
+
+  padding: 25px;
   padding-left: 20px;
+  background-color: #5483da;
 }
 
-#iphoto{
-  border-radius: 4px;
+#equipo {
+  background-color: #414369;
+}
+
+#iphoto {
   width: 50%;
   height: 250px;
-  margin-bottom: 20px;
+
   padding: 20px 10px;
   color: black;
   font-size: 100px;
   background-color: whitesmoke;
 }
 
-main.mlogin{
+main.mlogin {
   color: white;
   width: 100%;
 }
 
-.blogin{
+.blogin {
   width: 100px;
   padding: 15px;
   margin: 10px 0px;
@@ -81,46 +88,53 @@ main.mlogin{
   cursor: pointer;
 }
 
-.blogin:hover{
+.blogin:hover {
   opacity: 0.7;
 }
 
-.flogin{
+.flogin {
   border: 3px solid #f1f1f1;
   margin: 20px;
 }
 
-input[type=text], input[type=password]{
+input[type="text"],
+input[type="password"] {
   width: 100%;
-  margin:  8px 0;
+  margin: 8px 0;
   padding: 12px 20px;
   display: inline-block;
   border: 2px solid white;
   box-sizing: border-box;
 }
 
-.login{
+.login {
   padding: 25px;
 }
 
-.comcard{
+.comcard {
   color: white;
-  border-radius: 4px;
+
   width: 100%;
   height: auto;
-  margin-bottom: 30px;
+
+  padding: 25px;
   padding-left: 20px;
+  padding-top: 0;
+  /* background-color: #3d7ce1; */
+  text-align: center;
+  margin-top: 25px;
 }
 
-#idudas{
+#idudas {
   width: 90%;
   height: 100px;
 }
 
-footer{
+footer {
   text-align: center;
   color: white;
   width: 100%;
+  padding-bottom: 25px;
 }
 
 main.admin {
@@ -130,28 +144,28 @@ main.admin {
   padding-left: 10px;
 }
 
-#fcurso{
+#fcurso {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
   padding-right: 10px;
 }
 
-#cbutton{
+#cbutton {
   height: 50px;
   border-radius: 4px;
   background-color: white;
   color: #2f38c5;
 }
 
-.apic{
+.apic {
   width: 25%;
   background-color: white;
   border-radius: 5px;
   padding: 10px;
 }
 
-#lcursos li{
+#lcursos li {
   margin-left: 20px;
   margin-bottom: 15px;
   list-style-type: circle;
@@ -164,6 +178,8 @@ button {
   border: 1px solid transparent;
 }
 
+
 h1, h2, h3, h4 {
   color: white;
 }
+
