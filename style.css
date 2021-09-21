@@ -156,3 +156,15 @@ main.admin {
   margin-bottom: 15px;
   list-style-type: circle;
 }
+
+button {
+  width: 150px;
+  height: 25px;
+
+  border: 1px solid transparent;
+}
+
+h1, h2, h3, h4 {
+  color: white;
+}
+
