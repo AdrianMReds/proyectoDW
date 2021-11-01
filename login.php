@@ -47,12 +47,12 @@ if(isset($_POST['username'])){
 			if (isset($username)) {
 				if (mysqli_num_rows($result)!=1){
 					echo "<h2>Usuario o Contraseña Inválido";
+					echo "<a href= 'admin.html'> <button>Administrar Cursos</button></a>";
 				}
 				else {
 					echo "<h2>\n\tBienvenido ".$username."</h2>";
 					$_SESSION['login'] = $username;
 				}
-				echo "<a href= 'admin.html'> <button>Administrar Cursos</button></a>";
 			}
 		 ?>
 	</main>
