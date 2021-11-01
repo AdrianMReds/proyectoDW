@@ -1,7 +1,7 @@
 <?php 
 
 include "conexion.php";
-
+session_start();
 if(isset($_POST['username'])){
     
     $username=$_POST['username'];
@@ -26,7 +26,7 @@ if(isset($_POST['username'])){
 		<div id="logo" style="width: 30%;">Logo</div>
 		<nav>
 			<a href="index.html">Inicio</a>
-			<a href="admin.html">Cursos</a>
+			<a href="cursos.html">Cursos</a>
 			<a href="login.php">Login</a>
 		</nav>
 	</header>
@@ -49,9 +49,10 @@ if(isset($_POST['username'])){
 					echo "<h2>Usuario o Contraseña Inválido";
 				}
 				else {
-					session_start();
-					echo "<h2>Bienvenido ".$username."</h2>";
+					echo "<h2>\n\tBienvenido ".$username."</h2>";
+					$_SESSION['login'] = $username;
 				}
+				echo "<a href= 'admin.html'> <button>Administrar Cursos</button></a>";
 			}
 		 ?>
 	</main>
