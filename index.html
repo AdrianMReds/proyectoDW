@@ -86,6 +86,7 @@
 	<script>
 		function enviarComentario() {
 		  var comentario = document.getElementById("idudas").value;
+      comentario = comentario.replace(/\s/g, '');
 		  if (comentario.length < 1)
 		  {
 			alert("Comentario Invalido");
