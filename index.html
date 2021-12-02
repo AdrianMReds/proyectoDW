@@ -1,70 +1,99 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Codekraft</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<title>Codekraft</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
+  <body>
+    <header>
+      <div id="logo" style="width: 30%">Logo</div>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="login.php">Login</a>
+      </nav>
+    </header>
 
-<body>
+    <main class="index">
+      <section class="comcard">
+        <h2>¿Qué es Codekraft?</h2>
+        <br />
+        <p>Codekraft es una academia de programación para niños y jóvenes</p>
+      </section>
 
-	<header>
-		<div id="logo" style="width: 30%;">Logo</div>
-		<nav>
-			<a href="index.html">Inicio</a>
-			<a href="cursos.html">Cursos</a>
-			<a href="login.php">Login</a>
-		</nav>
-	</header>
+      <section class="card">
+        <h2>¿Por qué Codekraft?</h2>
+        <br />
+        <ul style="margin-left: 20px">
+          <li>
+            Su hijo aprenderá a programar de forma divertida y dinámica con los
+            mejores maestros
+          </li>
+          <br />
+          <li>
+            Su hijo reforzará temas que le ayudarán en la vida diaria como
+            matemáticas y decisiones lógicas
+          </li>
+          <br />
+          <li>
+            Al aprender a programar, su hijo tendrá más oportunidades educativas
+            y laborales en el futuro
+          </li>
+          <br />
+        </ul>
+      </section>
+      <picture id="iphoto">
+        <img
+          src="img/logo_o.jpeg"
+          style="width: 408.84px; display: block; margin: 0 auto; height: 100%"
+        />
+      </picture>
 
-	<main class="index">
-		<section class="comcard">
-			<h2>¿Qué es Codekraft?</h2><br>
-			<p>Codekraft es una academia de programación para niños y jóvenes</p>
-		</section>
+      <section id="equipo" class="card">
+        <h2>Equipo</h2>
+        <br />
+        <h3>Alberto López Torres</h3>
+        <h3>Ignacio Javier Nava</h3>
+        <h3>Maria Escutia Navarro</h3>
+      </section>
 
-		<section class="card">
-			<h2>¿Por qué Codekraft?</h2><br>
-			<ul style="margin-left: 20px;">
-				<li>Su hijo aprenderá a programar de forma divertida y dinámica con los mejores maestros</li><br>
-				<li>Su hijo reforzará temas que le ayudarán en la vida diaria como matemáticas y decisiones lógicas</li><br>
-				<li>Al aprender a programar, su hijo tendrá más oportunidades educativas y laborales en el futuro</li><br>
-			</ul>
-		</section>
-		<picture id="iphoto">
-			<img src="img/logo_o.jpeg" style="width: 408.84px; display: block; margin:0 auto; height: 100%;">
-		</picture>
+      <section id="cursos" class="card">
+        <h2>Cursos más relevantes</h2>
+        <br />
+        <ul>
+          <li>Desarrollo de videojuegos</li>
+          <li>Programación con código</li>
+          <li>Desarrollo de aplicaciones</li>
+        </ul>
+      </section>
 
-		<section id="equipo"class="card">
-			<h2>Equipo</h2><br>
-			<h3>Alberto López Torres</h3>
-            <h3>Ignacio Javier Nava</h3>
-            <h3>Maria Escutia Navarro</h3>
-            
-		</section>
+      <section class="comcard">
+        <center>
+          <h3>¿Tienes alguna duda o comentario?</h3>
+          <br />
+          <p>¡Escribenos!</p>
+          <form method="POST" action="comentario.php">
+            <input id="idudas" type="text" name="contenido"><br/>
+            <button type="submit" onclick="enviarComentario()">Enviar</button>
+          </form>
+        </center>
+      </section>
+    </main>
 
-		<section id="cursos" class="card">
-			<h2>Cursos más relevantes</h2><br>
-			<ul>
-				<li>Desarrollo de videojuegos</li>
-				<li>Programación con código</li>
-				<li>Desarrollo de aplicaciones</li>
-			</ul>
-		</section>
-
-		<section class="comcard">
-			<center>
-			<h3>¿Tienes alguna duda?</h3><br>
-			<p>¡Escribenos!</p>
-			<input id="idudas" type="text" name="dudas"><br>
-			<button type="submit">Enviar</button>
-			</center>
-		</section>
-	</main>
-
-	<footer><p>&copy; Codekraft</p></footer>
-
-</body>
-
+    <footer><p>&copy; Codekraft</p></footer>
+	<script>
+		function enviarComentario() {
+		  var comentario = document.getElementById("idudas").value;
+		  if (comentario.length < 1)
+		  {
+			alert("Comentario Invalido");
+		  }
+		  else {
+			alert("Comentario Enviado Exitosamente");  
+		  }
+		}
+		</script>
+  </body>
 </html>
