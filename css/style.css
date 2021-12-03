@@ -178,6 +178,20 @@ button {
   border: 1px solid transparent;
 }
 
+h1, h2, h3, h4 {
+  color: white;
+}
+
+.center {
+  text-align: center;
+  width: auto;
+  color: white;
+}
+
+table {
+  width: 100%;
+}
+
 .containerCont{
   color: white;
   max-width: 500px;

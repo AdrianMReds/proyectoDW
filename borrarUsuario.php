@@ -1,4 +1,5 @@
 <?php
+    session_start();
 	$username=$_GET['username'];
 	include('conexion.php');
 	mysqli_query($conexion,"delete from `users` where username='$username'");

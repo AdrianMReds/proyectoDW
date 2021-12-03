@@ -11,6 +11,7 @@ session_start();
     <meta charset="utf-8">
     <title>Login Codekraft</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="img/computer.ico">
     <style>
     a {
         color: white;
@@ -21,10 +22,13 @@ session_start();
 <body>
 
     <header>
-        <div id="logo" style="width: 30%;">Logo</div>
+        <div id="logo" style="width: 30%;">
+        <img src="img/happy.png" style="width:120px">
+        </div>
         <nav>
             <a href="index.html">Inicio</a>
             <a href="cursos.html">Cursos</a>
+            <a href="contactanos.html">Contáctanos</a>
             <a href="login.php">Login</a>
         </nav>
     </header>
