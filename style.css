@@ -193,3 +193,28 @@ h1, h2, h3, h4 {
 table {
   width: 100%;
 }
+
+.containerCont{
+  color: white;
+  max-width: 500px;
+  margin: 0 auto;
+  width: 500px;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 0px;
+  margin-left: 500px;
+}
+
+.form-group{
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.form-group input, .form-group textarea{
+  width: 100%;
+  padding: 5px;
+  font-size: 10px;
+  border: 1px solid rgba(120, 128, 128, 0.199);
+  margin-top: 5px;
+}
