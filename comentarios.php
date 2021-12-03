@@ -2,15 +2,6 @@
 
 include "conexion.php";
 session_start();
-if(isset($_POST['username'])){
-    
-    $username=$_POST['username'];
-    $password=$_POST['password'];
-    
-    $query="select * from users where username='".$username."'AND password='".$password."' limit 1";
-    
-    $result = mysqli_query($conexion, $query);
-}
 ?>
 
 <!DOCTYPE html>

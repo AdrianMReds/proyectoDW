@@ -41,7 +41,7 @@ if(isset($_POST['username'])){
                 <label>Username: </label>
                 <input type="text" placeholder="Ingresa tu username" name="username" required>
                 <label>Password: </label>
-                <input type="text" placeholder="Ingresa tu password" name="password" required>
+                <input type="password" placeholder="Ingresa tu password" name="password" required>
                 <button class="blogin" type="submit">Login</button>
             </div>
         </form>
@@ -59,6 +59,7 @@ if(isset($_POST['username'])){
 						<br>
 						<a href= 'admin.html'> <button>Administrar Cursos</button></a>
 						<a href= 'comentarios.php'> <button>Ver Comentarios</button></a>
+                        <a href= 'usuarios.php'> <button>Administrar Usuarios</button></a>
 					</div>";
 					$_SESSION['login'] = $username;
 
