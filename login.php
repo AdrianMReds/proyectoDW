@@ -63,7 +63,7 @@ else if (isset($_SESSION['login'])){
                     <a href= 'admin.html'> <button>Administrar Cursos</button></a>
                     <a href= 'comentarios.php'> <button>Ver Comentarios</button></a>
                     <a href= 'usuarios.php'> <button>Administrar Usuarios</button></a>
-                    <br>
+                    <br><br>
                     <a href= 'cerrarSesion.php'> <button>Cerrar Sesion</button></a>
                 </div>";
             }
