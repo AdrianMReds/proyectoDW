@@ -11,6 +11,9 @@ if(isset($_POST['username'])){
     
     $result = mysqli_query($conexion, $query);
 }
+else if (isset($_SESSION['login'])){
+    $username=$_SESSION['login'];
+}
 ?>
 
 <!DOCTYPE html>
@@ -51,21 +54,33 @@ if(isset($_POST['username'])){
         </form>
 
         <?php
-			if (isset($username)) {
+            if (isset($_SESSION['login']))
+            {
+                echo "
+                <div style = 'text-align: center; width: 100%; color: white;'>
+                    <h2>\n\tBienvenido, ".$username."</h2>
+                    <br>
+                    <a href= 'admin.html'> <button>Administrar Cursos</button></a>
+                    <a href= 'comentarios.php'> <button>Ver Comentarios</button></a>
+                    <a href= 'usuarios.php'> <button>Administrar Usuarios</button></a>
+                </div>";
+            }
+            
+			else if (isset($username)) {
 				if (mysqli_num_rows($result)!=1){
 					echo "<h2 style = 'text-align: center; width: 100%; color: white;'>
 					\tUsuario o Contraseña Inválido <br>";
 				}
 				else {
+                    $_SESSION['login'] = $username;
 					echo "
 					<div style = 'text-align: center; width: 100%; color: white;'>
-						<h2>\n\tBienvenido, ".$username."</h2>
+						<h2>\n\tBienvenido, ".$_SESSION['login']."</h2>
 						<br>
 						<a href= 'admin.html'> <button>Administrar Cursos</button></a>
 						<a href= 'comentarios.php'> <button>Ver Comentarios</button></a>
                         <a href= 'usuarios.php'> <button>Administrar Usuarios</button></a>
 					</div>";
-					$_SESSION['login'] = $username;
 
 				}
 			}
